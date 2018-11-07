@@ -1,6 +1,6 @@
 # TODO:  Find a better way to separate build configs for ADP vs non-ADP devices
 ifneq ($(BOARD_IS_AUTOMOTIVE),true)
-ifneq ($(filter msm8996 msm8998 sdm845,$(TARGET_BOARD_PLATFORM)),)
+ifneq ($(filter msm8996 msm8998 sdm845 sdm710,$(TARGET_BOARD_PLATFORM)),)
 ifneq ($(BOARD_PROVIDES_BOOTCTRL_HAL),true)
 ifeq ($(AB_OTA_UPDATER),true)
 LOCAL_PATH := $(call my-dir)
